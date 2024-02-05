@@ -71,7 +71,7 @@ public class UserApiControllerTests {
 
 	@Test
 	public void testGetUser_WithInvalidId() throws UserNotFoundException {
-		Long id = 4L;
+		Long id = 3L;
 
 		when(userService.get(id)).thenThrow(new UserNotFoundException());
 
